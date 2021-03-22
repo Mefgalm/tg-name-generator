@@ -20,7 +20,7 @@ let d20() = range 1 20
 let (<!>) x (f: unit -> int) = List.init x (fun _ -> f())
 
 let (|Rare|Standard|Often|) x =
-    match (range 1 6) with
+    match x with
     | 1 -> Rare
     | 2 -> Often
     | 3 -> Often
